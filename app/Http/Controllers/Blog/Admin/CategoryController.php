@@ -102,7 +102,7 @@ class CategoryController extends BaseController
         }
 
         $data = $request->all();
-        $result = $item->fill($data)->save();
+        $result = $item->update($data);
 
         if($result){
             return redirect()
